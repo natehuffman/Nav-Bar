@@ -15,7 +15,6 @@ body {
   align-items: center;
   padding: 20px;
   box-sizing: border-box;
-  position: fixed;
   top: 0px;
   box-shadow: 0px 0px 6px 5px rgba(0, 0, 0, 0.31);
 }
@@ -52,7 +51,7 @@ body {
   margin-right: 10px;
 }
 .content-container {
-  width: 100% !important;
+  width: 100%;
   box-sizing: border-box;
 }
 .image-container {
@@ -65,21 +64,6 @@ body {
 }
 .image-container img {
   height: 100%;
-}
-@media only screen and (max-width: 715px) {
-  .nav-bar {
-    flex-direction: column;
-    align-items: center;
-  }
-  .nav-button {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .nav-button:not(:first-child) {
-    margin-top: 10px;
-    margin-left: auto;
-  }
 }
 
 /* Hero */
@@ -125,6 +109,7 @@ body {
   align-items: center;
 }
 .testimonial-img {
+  width: 40%;
   padding: 30px 30px;
 }
 .quote-header {
@@ -143,10 +128,47 @@ body {
 /* Middle */
 .middle-container {
   color: black;
+  font-size: 2rem;
 }
 
-/* Footer */
-.footer-container {
+/* Music */
+.song-header {
+  position: relative;
+  top: 20px;
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  padding: 15px 20px;
+}
+.music-container {
   color: #eeeeee;
   background-color: #1c658c;
+}
+.music {
+  padding-bottom: 40px;
+}
+/* Footer */
+/* Media */
+@media only screen and (max-width: 715px) {
+  .nav-bar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-button {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .nav-button:not(:first-child) {
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .content-container {
+    flex-direction: column;
+  }
+  .testimonial-container {
+    flex-direction: column;
+  }
 }
