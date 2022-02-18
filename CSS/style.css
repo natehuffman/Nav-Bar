@@ -147,6 +147,9 @@ body {
 .music {
   padding-bottom: 40px;
 }
+.music:not(:first-child) {
+  padding-bottom: 40px;
+}
 /* Footer */
 /* Media */
 @media only screen and (max-width: 715px) {
