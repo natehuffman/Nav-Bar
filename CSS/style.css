@@ -131,7 +131,8 @@ body {
 }
 /* Middle */
 .middle-container {
-  color: black;
+  text-align: center;
+  padding-top: 10px;
   font-size: 2rem;
 }
 
@@ -155,6 +156,10 @@ body {
   padding-bottom: 40px;
 }
 /* Footer */
+.footer-box {
+  width: 98.9322vw;
+  height: 200px;
+}
 /* Media */
 @media only screen and (max-width: 715px) {
   .nav-bar {
