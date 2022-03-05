@@ -186,11 +186,39 @@ input:hover {
 .music:not(:first-child) {
   padding-bottom: 40px;
 }
+/* video */
+.video {
+  width: 98.9322vw;
+  height: 90vh;
+}
 /* Footer */
 .footer-box {
   width: 98.9322vw;
-  height: 200px;
+  display: flex;
+  font-size: 2rem;
+  justify-content: space-between;
+  flex-direction: row;
+  line-height: 1rem;
 }
+
+.footer-text {
+  display: flex;
+  float: left;
+}
+a:hover {
+  color: rgb(132, 132, 132);
+  text-decoration: underline;
+}
+.list-button {
+  font-size: 2rem;
+}
+
+ul {
+  list-style-type: none;
+  line-height: 2.5rem;
+  flex-direction: row;
+}
+
 /* Media */
 @media only screen and (max-width: 1357px) {
   .nav-bar {
@@ -213,10 +241,28 @@ input:hover {
     margin-left: 0px;
     margin-right: 0px;
   }
+  .image-container {
+    text-align: center;
+  }
+  .computer-img {
+    width: 80%;
+    display: initial;
+  }
   .content-container {
     flex-direction: column;
   }
   .testimonial-container {
     flex-direction: column;
+  }
+  .testimonial-img {
+    width: 80%;
+  }
+  .logo-img {
+    width: 80%;
+  }
+  .footer-box {
+    flex-direction: column;
+    text-align: center;
+    font-size: 4rem;
   }
 }
