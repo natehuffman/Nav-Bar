@@ -243,6 +243,7 @@ ul {
   }
   .image-container {
     text-align: center;
+    padding: none;
   }
   .computer-img {
     width: 80%;
@@ -261,8 +262,16 @@ ul {
     width: 80%;
   }
   .footer-box {
+    display: flex;
     flex-direction: column;
-    text-align: center;
+  }
+  .video {
+    width: 100vw;
+    height: 300px;
+  }
+  .list-text {
     font-size: 4rem;
+    line-height: 5rem;
+    text-align: center;
   }
 }
