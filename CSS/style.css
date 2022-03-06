@@ -1,3 +1,6 @@
+html {
+  font-size: 62.5%;
+}
 a {
   text-decoration: none;
   color: black;
@@ -40,18 +43,11 @@ input {
   margin-right: 10px;
   font-weight: 500;
 }
-input:hover {
-  cursor: text;
-  transform: translateZ(10px);
-}
 
 .search-text {
   position: relative;
   left: 74.4px;
   color: rgb(194, 194, 194);
-}
-.search-text:active {
-  transform: translateZ(-1px);
 }
 .nav-button {
   display: flex;
@@ -179,6 +175,9 @@ input:hover {
 .music-container {
   color: #eeeeee;
   background-color: #1c658c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .music {
   padding-bottom: 40px;
@@ -186,25 +185,35 @@ input:hover {
 .music:not(:first-child) {
   padding-bottom: 40px;
 }
-/* video */
-.video {
-  width: 98.9322vw;
-  height: 90vh;
-}
+
 /* Footer */
-.footer-box {
-  width: 98.9322vw;
+.footer-area {
+  background-color: #d8d2cb;
   display: flex;
+  justify-content: center;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+.footer-box {
+  width: 95%;
   font-size: 2rem;
-  justify-content: space-between;
   flex-direction: row;
   line-height: 1rem;
+  box-sizing: border-box;
 }
 
 .footer-text {
+  width: 25%;
+  height: 50%;
   display: flex;
   float: left;
+  box-sizing: border-box;
+  margin: 10px 2.5%;
+  background-color: white;
+  border: solid 1px black;
+  border-radius: 10px;
 }
+
 a:hover {
   color: rgb(132, 132, 132);
   text-decoration: underline;
@@ -216,18 +225,32 @@ a:hover {
 ul {
   list-style-type: none;
   line-height: 2.5rem;
-  flex-direction: row;
+  padding: 0px 5rem;
+  text-align: center;
 }
 
 /* Media */
+@media only screen and (max-width: 1500px) {
+  .footer-text {
+    width: 45%;
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 @media only screen and (max-width: 1357px) {
+  ul {
+    padding: 0px 0px;
+  }
   .nav-bar {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
   }
   input {
-    width: 89%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -243,11 +266,12 @@ ul {
   }
   .image-container {
     text-align: center;
-    padding: none;
+    padding-top: 0;
   }
   .computer-img {
     width: 80%;
     display: initial;
+    padding-bottom: 0px;
   }
   .content-container {
     flex-direction: column;
@@ -261,17 +285,23 @@ ul {
   .logo-img {
     width: 80%;
   }
-  .footer-box {
+  .footer-area {
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
-  .video {
-    width: 100vw;
-    height: 300px;
+}
+@media only screen and (max-width: 800px) {
+  .footer-box {
+    width: 100%;
+    position: relative;
+    left: 0px;
   }
-  .list-text {
-    font-size: 4rem;
-    line-height: 5rem;
-    text-align: center;
+  .footer-text {
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
