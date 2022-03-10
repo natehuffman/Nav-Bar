@@ -295,14 +295,13 @@ ul {
     flex-direction: column;
     justify-content: center;
   }
-}
-@media only screen and (max-width: 1000px) {
   .footer-text {
     width: 95%;
     height: 550px;
     font-size: 3rem;
   }
 }
+
 @media only screen and (max-width: 800px) {
   .footer-box {
     width: 100%;
